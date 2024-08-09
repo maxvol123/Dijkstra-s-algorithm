@@ -79,6 +79,13 @@ div{
     margin-left: 430px;
     rotate: -90deg;
 }
+.data{
+    font-size: 25px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -30px;
+    background-color: rgba(255, 255, 255, 0.63);
+}
 .cash-one{
     animation: normal cash-one 1s;
 }
@@ -126,4 +133,31 @@ div{
         margin-top: 50px;
         margin-left: 500px;
     }
+  }
+  .form{
+    height: 200px;
+    width: 200px;
+    margin-left: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form>span{
+    margin-bottom: 10px;
+  }
+  .form>select{
+    margin-bottom: 10px;
+  }
+  .form>input{
+    margin-bottom: 10px;
+  }
+  .Cart{
+    height: 200px;
+    width: 200px;
+    margin-left: 700px;
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  .item{
+
   }
