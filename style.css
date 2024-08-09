@@ -1,0 +1,129 @@
+div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+.one {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.two {
+    margin-top: 300px;
+    margin-left: 30px;
+}
+.three {
+    margin-top: 550px;
+    margin-left: 100px;
+}
+.four {
+    margin-top: 50px;
+    margin-left: 500px;
+}
+.table {
+    margin-top: 400px;
+    margin-left: 500px;
+    height: 300px;
+}
+.table svg{
+    height: 200px;
+}
+.robot {
+    margin-top: 350px;
+    margin-left: 450px;
+    height: 300px;
+}
+#a{
+    background-color: black;
+    width: 300px;
+    height: 20px;
+    margin-top: 100px;
+    margin-left: 160px;
+}
+#b{
+    background-color: black;
+    width: 120px;
+    height: 20px;
+    margin-top: 210px;
+    margin-left: 20px;
+    rotate: 90deg;
+}
+#c{
+    background-color: black;
+    width: 150px;
+    height: 20px;
+    margin-top: 470px;
+    margin-left: 50px;
+    rotate: 60deg;
+}
+#d{
+    background-color: black;
+    width: 400px;
+    height: 20px;
+    margin-top: 250px;
+    margin-left: 100px;
+    rotate: -35deg;
+}
+#e{
+    background-color: black;
+    width: 325px;
+    height: 20px;
+    margin-top: 570px;
+    margin-left: 200px;
+    rotate: -20deg;
+}
+#f{
+    background-color: black;
+    width: 270px;
+    height: 20px;
+    margin-top: 280px;
+    margin-left: 430px;
+    rotate: -90deg;
+}
+.cash-one{
+    animation: normal cash-one 1s;
+}
+.cash-two{
+    animation: normal cash-two 1s;
+}
+.cash-three{
+    animation: normal cash-three 1s;
+}
+.cash-four{
+    animation: normal cash-four 1s;
+}
+@keyframes cash-one {
+    from {margin-top: 350px;
+        margin-left: 450px;
+}
+    to {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+  }
+  @keyframes cash-two {
+    from {margin-top: 350px;
+        margin-left: 450px;
+}
+    to {
+        margin-top: 300px;
+        margin-left: 30px;
+    }
+  }
+  @keyframes cash-three {
+    from {margin-top: 350px;
+        margin-left: 450px;
+}
+    to {
+        margin-top: 550px;
+        margin-left: 100px;
+    }
+  }
+  @keyframes cash-four {
+    from {margin-top: 350px;
+        margin-left: 450px;
+}
+    to {
+        margin-top: 50px;
+        margin-left: 500px;
+    }
+  }
