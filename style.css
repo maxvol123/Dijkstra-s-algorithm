@@ -171,11 +171,18 @@ div{
     display: flex;
     flex-direction: column;
   }
-  .item{
-
-  }
   .totalScore{
     margin-left: 200px;
     font-size: 25px;
     width: 200px;
+  }
+  .unhesh{
+    width: 5000px;
+    margin-top: 200px;
+    margin-left: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+  .unhesh>*{
+    width: 230px;
   }

@@ -73,9 +73,17 @@ four.innerHTML=`
         if (totalSize>1) {
             document.getElementById("Box").disabled = true;
         }
+        if (totalSize>5) {
+            alert("the size of order is too big complete this order")
+            return
+        }
 
-
+        if (data[select.value]-amount.value<0) {
+            alert("We dont have this in Stock")
+            return
+        }
         if (select.value=="PC") {
+
             totalScore=totalScore+shortestWay[3]
             robot.classList.add("cash-one")
             setTimeout(()=>{
@@ -125,13 +133,32 @@ four.innerHTML=`
         }
         //visualization of every elemnt in Cart
         Cart.innerHTML+=`<span class="item">
-        <span>
         ${select.value}
         x${amount.value}
-        </span>
         </span>`
+
+    }
+    function Hash(input, key) {
+        let hash = '';
+        for (let i = 0; i < input.length; i++) {
+            hash += String.fromCharCode(input.charCodeAt(i) + key);         // Get ASCII code of every symbol and add it to one string
+        }
+        return hash;
+    }
+    function Unhash(hash, key) {
+        let original = '';
+        for (let i = 0; i < hash.length; i++) {
+            // Получаем ASCII-код символа, вычитаем ключ и преобразуем в строку
+            original += String.fromCharCode(hash.charCodeAt(i) - key);
+        }
+        return original;
     }
     function Complete() {
-        alert("Order is completed")
+        const elements = document.querySelectorAll('.item');
+    let combinedString = '';
+    elements.forEach(element => {
+    combinedString += element.textContent.replace(/\s+/g, '');
+    });
+        alert(`Order is completed Your hashed order number is ${Hash(combinedString, 1)}`)
         window.location.reload()
     }
