@@ -38,6 +38,7 @@ div{
     height: 20px;
     margin-top: 100px;
     margin-left: 160px;
+    color: white;
 }
 #b{
     background-color: black;
@@ -45,7 +46,9 @@ div{
     height: 20px;
     margin-top: 210px;
     margin-left: 20px;
-    rotate: 90deg;
+    rotate: -90deg;
+    color: white;
+    writing-mode: vertical-rl;
 }
 #c{
     background-color: black;
@@ -54,6 +57,7 @@ div{
     margin-top: 470px;
     margin-left: 50px;
     rotate: 60deg;
+    color: white;
 }
 #d{
     background-color: black;
@@ -62,6 +66,7 @@ div{
     margin-top: 250px;
     margin-left: 100px;
     rotate: -35deg;
+    color: white;
 }
 #e{
     background-color: black;
@@ -70,6 +75,8 @@ div{
     margin-top: 570px;
     margin-left: 200px;
     rotate: -20deg;
+    color: white;
+
 }
 #f{
     background-color: black;
@@ -78,6 +85,9 @@ div{
     margin-top: 280px;
     margin-left: 430px;
     rotate: -90deg;
+    color: white;
+    color: white;
+    writing-mode: vertical-rl;
 }
 .data{
     font-size: 25px;
@@ -97,6 +107,9 @@ div{
 }
 .cash-four{
     animation: normal cash-four 1s;
+}
+.totalSize{
+    margin-bottom: 20px;
 }
 @keyframes cash-one {
     from {margin-top: 350px;
@@ -160,4 +173,9 @@ div{
   }
   .item{
 
+  }
+  .totalScore{
+    margin-left: 200px;
+    font-size: 25px;
+    width: 200px;
   }

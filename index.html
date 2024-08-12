@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="a"></div>
-    <div id="b"></div>
-    <div id="c"></div>
-    <div id="d"></div>
-    <div id="e"></div>
-    <div id="f"></div>
-
+    <div id="a">7</div>
+    <div id="b">6</div>
+    <div id="c">4</div>
+    <div id="d">15</div>
+    <div id="e">10</div>
+    <div id="f">9</div>
+    <div class="totalScore"></div>
     <div class="one">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M12 6V0H4v6H0v7h16V6zm-5 6H1V7h2v1h2V7h2zM5 6V1h2v1h2V1h2v5zm10 6H9V7h2v1h2V7h2zM0 16h3v-1h10v1h3v-2H0z"/></svg>
     </div>
@@ -44,7 +44,16 @@
           <button onclick="AddToOrder()">Add to order </button>
         </div>
         <div class="Cart">
-            <button>Complete Order</button>
+            <div class="totalSize">Total size: <span class="delivery_size"></span></div>
+            <h1>delivery buy: </h1>
+            <select class="delivery select">
+                <option id="Box">Box 1m^2</option>
+                <option>Container 10m^2</option>
+              </select>
+              <button onclick="Complete()">Complete order</button>
+        </div>
+        <div class="delivery">
+
         </div>
 </body>
 
