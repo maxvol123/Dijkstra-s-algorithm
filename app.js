@@ -64,7 +64,7 @@ four.innerHTML=`
         const amount = document.querySelector(".amount")
         const score = document.querySelector(".totalScore")   
         const sizehtml = document.querySelector(".delivery_size")
-        //gettion all html elements that we need
+        //get all html elements that we need
         
         //calculation for get total size   
         totalSize=totalSize+size[select.value]*amount.value
@@ -145,12 +145,16 @@ four.innerHTML=`
         }
         return hash;
     }
-    function Unhash(hash, key) {
+    function Unhash(key=1) {
+        let hash = document.querySelector(".hesh").value
         let original = '';
         for (let i = 0; i < hash.length; i++) {
             // Получаем ASCII-код символа, вычитаем ключ и преобразуем в строку
             original += String.fromCharCode(hash.charCodeAt(i) - key);
         }
+        console.log(original);
+        alert("This order: "+ original)
+        
         return original;
     }
     function Complete() {
